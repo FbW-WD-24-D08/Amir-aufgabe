@@ -17,3 +17,10 @@ const produkte = [
   { name: "Smartwatch", preis: 199.99 },
   { name: "Lautsprecher", preis: 79.99 },
 ];
+
+function zeigeProdukte() {
+  console.log("Hallo! Hier sind unsere Produkte:");
+  produkte.forEach((produkt, index) => {
+    console.log(`${index + 1}. ${produkt.name} - ${produkt.preis}€`);
+  });
+}
